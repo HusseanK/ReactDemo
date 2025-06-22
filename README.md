@@ -6,4 +6,5 @@ Uses a 3rd party API  in order to display movies
 ### Instructions
 Clone the repo and create an API key at (https://www.themoviedb.org/). Replace the API key in BaseAPI.js and re-name to api.js
 
-![MovieApp](https://github.com/user-attachments/assets/9f846376-1aa3-436f-8a07-520e2ff6f2a8)
+
+![alt text](public/Demo.gif)
