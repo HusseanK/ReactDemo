@@ -1,31 +1,44 @@
+@import "tailwindcss";
+
+
 .navbar {
-  background-color: #000000;
-  padding: 1rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    @apply flex right-0 justify-between px-[2rem] py-[1rem] z-[300] text-[1rem];
+}
+
+.banner{
+    @apply z-50 flex sticky top-0 justify-between px-[2rem] py-[1rem] text-shadow-md text-shadow-black
+    backdrop-blur-xs h-[128px]
+    ; 
+
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.15) 0%,
+        rgba(113, 14, 14, 0.25) 50%,
+        rgba(149, 16, 16, 0.5) 100%
+    );
+
+    color: rgba(255, 0, 0, 0.75);
+
 }
 
 .navbar-brand {
-  font-size: 1.5rem;
-  font-weight: bold;
+    @apply text-[5rem] font-bold flex flex-1 justify-center;
 }
 
 .navbar-links {
-  display: flex;
-  gap: 2rem;
+    @apply flex fixed px-12 right-0;
 }
 
 .nav-link {
-  font-size: 1rem;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
+    @apply rounded-3xl text-[2rem] p-[1rem] font-bold;
   transition: background-color 0.2s;
 }
 
 .nav-link:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+    @apply scale-[110%];
+  background: radial-gradient(
+    rgba(150, 10, 10, 0.15) 0%,
+    rgba(150, 10, 10, 0) 80%
+  );
 }
 
 @media (max-width: 768px) {

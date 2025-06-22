@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 .home {
   padding: 2rem 0;
   width: 100%;
@@ -54,10 +56,5 @@
 }
 
 .movies-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.5rem;
-  padding: 1rem;
-  width: 100%;
-  box-sizing: border-box;
+    @apply flex justify-center-safe flex-wrap gap-[1.25rem] p-[0.75rem] w-auto box-border;
 }

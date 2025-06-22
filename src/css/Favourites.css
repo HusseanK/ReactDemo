@@ -1,7 +1,8 @@
+@import 'tailwindcss';
+
+
 .favourites {
-  padding: 2rem;
-  width: 100%;
-  box-sizing: border-box;
+    @apply p-2 w-auto box-border;
 }
 
 .favourites h2 {

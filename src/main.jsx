@@ -5,8 +5,6 @@ import App from './App.jsx'
 
 import './css/index.css'
 
-import './styles.css'
-
 import { BrowserRouter } from 'react-router-dom'
 
 
